@@ -1,7 +1,46 @@
-body{
+html, body{
+    overflow-x: hidden;
+      overflow-y: scroll;
+    width: 100%;
     margin: 0;
-    font-family: Arial, sans-serif;
+    padding: 0;
     
+}
+
+body{
+    
+    /* font-family: Arial, sans-serif; */
+    background-image: url(./images/image_a73ecc77.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    font-family: 'Brush Script MT', cursive;
+    font-size: 3rem;
+    color: rgb(247, 3, 3);
+    text-shadow: 2px 2px 4px rgba(10, 237, 240, 0.5);
+    margin-top: 20px;
+}
+h3{
+  font-family: cursive;
+    font-size: 2rem;
+    color: rgb(28, 9, 9);
+    text-shadow: 2px 2px 4px rgba(241, 245, 132, 0.5);
+    
+   
+}
+a{
+    font-family: shadow into light, cursive;
+    font-size: 1.2rem;
+    color: rgb(28, 9, 9);
+    text-shadow: 1px 1px 2px rgba(110, 157, 246, 0.5);
+    text-decoration: underline;
+}
+p{
+    font-family: shadow into light, cursive;
+    font-size: 1.2rem;
+    color: rgb(28, 9, 9);
+    text-shadow: 1px 1px 2px rgba(10, 237, 240, 0.5);
 }
 .slider{
     position: relative;
@@ -14,6 +53,7 @@ body{
     height: 40vh;
     display: none;
     opacity: 0.9;
+    border-radius: 50%;
 }
 img.displaySlide{
     display: block;
@@ -27,14 +67,14 @@ img.displaySlide{
     background-color: rgba(0,0,0,0.3);
     color: white;
     border: none;
-    padding: 10px 15px;
+    /* padding: 10px 15px; */
     cursor: pointer;
     font-size: 2rem;
 
 }
-button{
+/* button{
     height: 100%;
-}
+} */
 .previous{
     left: 0px;
 }
@@ -45,7 +85,7 @@ button{
     from {opacity: 0.5;}
     to {opacity: 1;}
 }
-.profilePic{
+/* .profilePic{
     border-radius: 50%;
     height: 200px;
     width: 200px;
@@ -53,18 +93,121 @@ button{
     background-position: center;
     margin: 20px ;
     
-}
+} */
 .container{
     display: flex;
     flex-direction: column;
     align-items: center;
     
 }
+.invitation{
+    background-color: rgba(255, 255, 255, 0.8);
+    /* padding: 20px; */
+    border-radius: 10px;
+    max-width: 600px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    flex-wrap: wrap;
+}
 .background{
     height: 100vh;
     background-image: url(./images/image_a73ecc77.jpg);
-       
- 
+    background-size:cover;
+    background-repeat: repeat;
+  
    
 
+}
+
+
+
+ /* Styles for screens 600px and wider */
+@media screen and (min-width: 600px) {
+    .slider{
+    position: relative;
+    width: 500px;
+    margin-top: 10px;
+    overflow: hidden;
+   
+}
+   .slider img{
+    width: 500px;
+    height: 500px;
+    display: none;
+    opacity: 0.9;
+    border-radius: 50%;
+    
+    
+}
+img.displaySlide{
+    display: block;
+    animation-name: fade;
+    /* animation-duration: 1s; */
+}   
+/* .slider button{
+    position : absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.3);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 2rem;
+
+} */
+button{
+    height: 100%;
+}
+.previous{
+    left: 0px;
+    display: none;
+}
+.next{
+    right: 0px;
+    display: none;
+}
+@keyframes fade{
+    from {opacity: 0.5;}
+    to {opacity: 1;}
+}
+/* .profilePic{
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    background-position: center;
+    margin: 20px ;
+    
+} */
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.invitation{
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    
+}
+.background{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(./images/image_a73ecc77.jpg);
+    background-size:cover;
+    background-repeat: repeat;  
+    flex-direction: column;
+}
 }
