@@ -6,24 +6,27 @@ html, body{
     padding: 0;
     
 }
-
-body{
-    
-    /* font-family: Arial, sans-serif; */
+.background{
     background-image: url(./images/image_a73ecc77.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-}
+    height: 100%;
+    
+   
+} 
+ body{
+    background-color: rgb(120, 239, 239);
+ }
 h1{
     font-family: 'Brush Script MT', cursive;
-    font-size: 3rem;
+    font-size: 3.2rem;
     color: rgb(247, 3, 3);
     text-shadow: 2px 2px 4px rgba(10, 237, 240, 0.5);
     margin-top: 20px;
 }
 h3{
   font-family: cursive;
-    font-size: 2rem;
+    font-size: 2.2rem;
     color: rgb(28, 9, 9);
     text-shadow: 2px 2px 4px rgba(241, 245, 132, 0.5);
     
@@ -31,21 +34,22 @@ h3{
 }
 a{
     font-family: shadow into light, cursive;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     color: rgb(28, 9, 9);
     text-shadow: 1px 1px 2px rgba(110, 157, 246, 0.5);
     text-decoration: underline;
 }
 p{
     font-family: shadow into light, cursive;
-    font-size: 1.2rem;
+    font-size: 1.9rem;
     color: rgb(28, 9, 9);
     text-shadow: 1px 1px 2px rgba(10, 237, 240, 0.5);
+    font-weight: bold;
 }
 .slider{
     position: relative;
     width: 100%;
-    margin: 20px 2px;
+    
     overflow: hidden;
 }
 .slider img{
@@ -54,33 +58,36 @@ p{
     display: none;
     opacity: 0.9;
     border-radius: 50%;
+    border-top: 7px solid transparent;
+     border-bottom: 8px solid transparent;
+    background: linear-gradient(#000,#000) padding-box, linear-gradient(to right, #ff0000, #00ff00, #0000ff) border-box;
 }
 img.displaySlide{
     display: block;
     animation-name: fade;
     /* animation-duration: 1s; */
 }   
-.slider button{
+/* .slider button{
     position : absolute;
     top: 50%;
     transform: translateY(-50%);
     background-color: rgba(0,0,0,0.3);
     color: white;
     border: none;
-    /* padding: 10px 15px; */
+    padding: 10px 15px; 
     cursor: pointer;
     font-size: 2rem;
 
-}
+} 
 /* button{
     height: 100%;
 } */
-.previous{
+/* .previous{
     left: 0px;
 }
 .next{
     right: 0px;
-}
+} */
 @keyframes fade{
     from {opacity: 0.5;}
     to {opacity: 1;}
@@ -94,24 +101,35 @@ img.displaySlide{
     margin: 20px ;
     
 } */
+ span{
+    font-family:shadow into light, cursive ;
+    font-size: 1.8rem;
+    color: black;
+    
+    text-shadow: 1px 1px 2px rgba(110, 157, 246, 0.5);
+
+  
+ }
 .container{
     display: flex;
     flex-direction: column;
     align-items: center;
     
 }
+
 .invitation{
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(153, 160, 160, 0.8);
     /* padding: 20px; */
     border-radius: 10px;
     max-width: 600px;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-top: 20px;
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
     margin-left: 10px;
     margin-right: 10px;
     flex-wrap: wrap;
+    border: hsla(228, 90%, 69%, 0.53) solid 5px;
 }
 /* .background{
     height: 100vh;
