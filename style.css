@@ -12,20 +12,23 @@ html, body{
     background-size: cover;
     height: 100%;
     
+
    
 } 
  body{
     background-color: rgb(120, 239, 239);
+   
  }
 h1{
-    font-family: 'Brush Script MT', cursive;
+    /* font-family: 'Brush Script MT', cursive; */
     font-size: 3.2rem;
     color: rgb(247, 3, 3);
     text-shadow: 2px 2px 4px rgba(10, 237, 240, 0.5);
     margin-top: 20px;
+    /* font-weight: bold; */
 }
 h3{
-  font-family: cursive;
+  /* font-family: cursive; */
     font-size: 2.2rem;
     color: rgb(28, 9, 9);
     text-shadow: 2px 2px 4px rgba(241, 245, 132, 0.5);
@@ -33,14 +36,14 @@ h3{
    
 }
 a{
-    font-family: cursive,sans-serif;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
     font-size: 1.8rem;
     color: rgb(28, 9, 9);
     text-shadow: 1px 1px 2px rgba(110, 157, 246, 0.5);
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 p{
-    font-family: shadow into light, cursive;
+    /* font-family: shadow into light, cursive; */
     font-size: 1.9rem;
     color: rgb(28, 9, 9);
     text-shadow: 1px 1px 2px rgba(10, 237, 240, 0.5);
@@ -104,7 +107,7 @@ img.displaySlide{
     
 } */
  span{
-    font-family:cursive,sans-serif ;
+    /* font-family:cursive,sans-serif ; */
     font-size: 1.8rem;
     color: black;
     
@@ -125,14 +128,16 @@ img.displaySlide{
     border-radius: 10px;
     max-width: 600px;
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
     margin-top: 20px;
     /* margin-bottom: 15px; */
     margin-left: 10px;
     margin-right: 10px;
-    flex-wrap: wrap;
+   
     border: hsla(228, 90%, 69%, 0.53) solid 5px;
+   
 }
+
 /* .background{
     height: 100vh;
     background-image: url(./images/image_a73ecc77.jpg);
